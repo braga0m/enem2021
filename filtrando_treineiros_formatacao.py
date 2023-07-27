@@ -11,6 +11,7 @@ dados = pd.read_csv('C:/Users/Matias/Documents/Projetos_e_Estudos/ENEM_2021/DADO
                      usecols=cols,
                      encoding='latin-1', sep = ';')
 
+
 dados.head(20)
 
 dados.shape#3389832 linhas  e 15 colunas
@@ -43,10 +44,11 @@ mapa = {
 dados = dados.rename(columns=mapa)
 
 #mudando o nome das categorias
+#sexo
 print(dados['sexo'].unique())
 dados['sexo'] = dados['sexo'].replace({'M':'Masculino','F':'Feminino'})
 
-#
+#faixa etária
 print(dados['faixa_etaria'].unique())
 categorias_idade = ['Menor de 17 anos','17 anos','18 anos','19 anos','20 anos','21 anos','22 anos','23 anos','24 anos','25 anos',
                     'Entre 26 e 30 anos','Entre 31 e 35 anos','Entre 36 e 40 anos','Entre 41 e 45 anos','Entre 46 e 50 anos',
@@ -54,13 +56,13 @@ categorias_idade = ['Menor de 17 anos','17 anos','18 anos','19 anos','20 anos','
 mapa_idade = dict(zip([i + 1 for i in range(20)],categorias_idade))
 dados['faixa_etaria'] = dados['faixa_etaria'].replace(mapa_idade)
 
-#
+#raça/cor
 print(dados['raca_cor'].unique())
 categorias_raca = ['Não declarado','Branca','Preta','Parda','Amarela','Indígena','Não dispõe da informação']
 mapa_raca = dict(zip([i for i in range(7)],categorias_raca))
 dados['raca_cor'] = dados['raca_cor'].replace(mapa_raca)
 
-#
+#escola
 print(dados['escola'].unique())
 categorias_escola = ['Não Respondeu','Pública','Privada']
 mapa_escola = dict(zip([i + 1 for i in range(3)],categorias_escola))

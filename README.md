@@ -24,9 +24,14 @@ O conjunto de dados do ENEM é uma base importantíssima para analisar o perfil 
 
 Mesmo com algumas variáveis com qualidade fora do esperado, é intessante estudar o perfil dos candidatos que realizaram a prova. Por exemplo, dos quase 1.99 mihões que fizeram o exame ao menos um dos dois dias, aproxidamente 61% se identificaram como do sexo feminino e 39% masculino, uma diferença bastante significativa. Essa informação vai de encontro com a notícia pública em 2021 pelo site Globo, que afirma "Mulheres têm mais acesso ao ensino superior". O ENEM é umas das principais formas de ingresso do ensino público superior via Sistema de Seleção Unificada (SISU), assim se dentre os concorrentes das vagas mais de 60% são mulheres, é completamente natural imaginar isso se reflita nas vagas das universidades públicas. 
 
-Além, do sexo dos candidatos foram analisadas uma série de outros fatores como faixa etária, etnia e outras. Além é claro, do escore final de cada área do conhecimento.
+(Link da notícia mencionada: https://valor.globo.com/brasil/noticia/2021/03/04/ibge-mulheres-tem-mais-acesso-ao-ensino-superior-mas-ainda-sao-minoria-em-areas-como-engenharia-e-ti.ghtml) 
+
+<p align="center">
+  <img src="https://github.com/braga0m/enem2021/blob/main/pie_sexo.png"/>
+</p>
 
 
+Para ter acesso ao tratamento dos dados e o restante da análise acesse o arquivo: https://github.com/braga0m/enem2021/blob/main/analises_medidas.ipynb
 
 
 
